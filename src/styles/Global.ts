@@ -13,7 +13,7 @@ body {
     -webkit-font-smoothing:antialised;
 }
 body,input,button {
-    font-family:serif;
+    font-family:Roboto,serif;
     font-size:16px;
 
 }
