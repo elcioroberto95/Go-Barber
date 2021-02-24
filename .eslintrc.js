@@ -10,6 +10,7 @@ module.exports = {
     camelcase: "off",
     "react/jsx-filename-extension": "off",
     "import/order": "off",
+    "linebreak-style": 0,
   },
   settings: {
     "import/resolver": {

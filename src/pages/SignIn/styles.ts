@@ -18,38 +18,12 @@ export const Content = styled.div`
             margin:80px 0;
             width: 340px;
             text-align:center;
-        
-        
+
+
             h1 {
             margin-bottom:24px;
         }
-        input {
-            background:#232129;
-            border-radius:10px;
-            border:2px solid #232129;
-            padding:16px;
-            width:100%;
-            & + input {
-            margin-top:8px;
-        }
-        }
-       
-        button {
-            
-            background:#ff9000;
-            height:56px;
-            border-radius:10px;
-            border:0;
-            color:#312e38;
-            padding:16px;
-            width:100%;
-            font-weight:500; 
-            margin-top:16px; 
-            transition:background-color 0.2s;
-            &:hover {
-                background: ${shade(0.2, "#ff9000")};
-            }
-        }
+
         a {
             color:#F3EDE8;
             display:block;
@@ -59,7 +33,7 @@ export const Content = styled.div`
                 color:${shade(0.2, "#F3EDE8")}
             }
             }
-        
+
         }
         > a {
             color:#ff9000;
