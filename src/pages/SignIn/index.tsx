@@ -10,7 +10,10 @@ import { AuthContext } from '../../context/AuthContext';
 import getValidationErrors from '../../utils/getValidationErrors';
 import { Background, Container, Content } from "./styles";
 
-
+interface SignInFormData {
+  email:string;
+  password:string;
+}
 
 
 const SignIn:React.FC = () => {
@@ -20,7 +23,7 @@ console.log(name);
   const formRef = useRef<FormHandles>(null);
 
 
-  const handleSubmit = useCallback(async (data: object) => {
+  const handleSubmit = useCallback(async (data: SignInFormData) => {
 
     try {
       formRef.current?.setErrors({});
@@ -32,7 +35,10 @@ console.log(name);
       await schema.validate(data, {
         abortEarly:false,
       });
-      signIn();
+      signIn({
+        email:data.email,
+        password:data.password
+      });
     }
     catch(err){
 
